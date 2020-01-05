@@ -72,18 +72,6 @@ header {
 header img {
   position: absolute;
   margin-top: 14px;
-  margin-left: -16px;
-}
-
-.navbar-collapse {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-right: 8px;
-}
-
-.navbar-brand {
-  margin-left: 54px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -106,7 +94,7 @@ header img {
   color: #fff;
 }
 
-.intro {
+.wr-intro {
   background-image: url(../img/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,16 +102,15 @@ header img {
   color: #fff;
 }
 
-.intro .container {
+.wr-intro .container {
   height: 100%;
   position: relative;
 }
 
-.intro .wr-container {
+.wr-intro .intro {
   width: 100%;
-  top: 50%;
+  top: 38%;
   position: absolute;
-  margin-top: -50px;
   text-align: center;
 }
 
@@ -131,15 +118,12 @@ h1 {
   text-transform: uppercase;
   font-size: 35px;
   font-family: "SourceSanPro-Light", sans-serif;
-  padding-right: 28px;
-  margin-top: -36px;
   letter-spacing: 8px;
   word-spacing: -4px;
 }
 
-.wr-container p {
-  padding-top: 24px;
-  margin-left: -38px;
+.intro p {
+  margin-top: 32px;
   font-size: 16px;
   letter-spacing: 0.8px;
   line-height: 1.7;
@@ -158,7 +142,6 @@ h1 {
 .wr-button {
   position: absolute;
   bottom: 78px;
-  padding-right: 40px;
   width: 100%;
   text-align: center;
 }
@@ -169,28 +152,23 @@ h1 {
 }
 
 .about {
-  width: 32%;
-  display: block;
+  width: 480px;
   position: absolute;
-  left: 21%;
-  top: 47%;
-}
-
-.about h4 {
-  margin-top: -102px;
-  margin-left: -8px;
+  left: 536px;
+  top: 108px;
 }
 
 .about p {
-  margin-top: 38px;
-  margin-left: -10px;
+  margin-top: 36px;
+  margin-bottom: 38px;
   line-height: 1.8;
   letter-spacing: 0.7px;
   color: #81868e;
 }
 
 .about a {
-  padding: 6px 28px;
+  font-size: 16px;
+  padding: 6px 26px;
   color: #000;
   border: solid 1px #000;
   border-radius: 25px;
@@ -211,8 +189,13 @@ h1 {
 }
 
 .ipad img {
-  margin-right: 130px;
+  margin-right: 114px;
   margin-top: 64px;
+}
+
+.details {
+  margin-top: 58px;
+  text-align: center;
 }
 
 .wr-details {
@@ -220,14 +203,9 @@ h1 {
   text-align: center;
 }
 
-.wr-details h4 {
-  padding-top: 58px;
-  margin-left: -38px;
-}
-
 .wr-details p {
   padding-top: 26px;
-  margin-left: -50px;
+  margin-left: -16px;
   line-height: 1.7;
   word-spacing: 3px;
   letter-spacing: 0.2px;
@@ -241,15 +219,14 @@ h1 {
 }
 
 .wr-details ul {
-  width: 224px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 46px;
-  margin-left: -109px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 240px;
+  margin: 56px auto;
+  padding: 0;
 }
 
 .wr-details .far {
@@ -274,13 +251,11 @@ h1 {
 .wr-details .fa-mouse {
   border-radius: 50%;
   padding: 9px 13px;
-  margin-left: 28px;
 }
 
 .wr-details .fa-lightbulb {
   border-radius: 50%;
   padding: 9px 14px;
-  margin-left: 28px;
 }
 
 .wr-details .far:hover {
@@ -298,7 +273,6 @@ h1 {
 }
 
 .wr-creative {
-  margin-top: 48px;
   text-align: left;
   margin-left: 74px;
   height: 264px;
@@ -306,25 +280,25 @@ h1 {
 
 .wr-creative h5 {
   font-size: 20px;
-  margin-left: -36px;
+  margin-left: -16px;
 }
 
 .ideas {
   line-height: 28px;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.8px;
 }
 
 .ideas p {
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.8;
   word-spacing: 2px;
   letter-spacing: 0.5px;
-  margin-left: -34px;
+  margin-left: -14px;
   color: #81868e;
 }
 
 .creative {
-  margin-left: 44px;
+  margin-left: 62px;
   margin-top: 55px;
   line-height: 1.8;
   word-spacing: 1.2px;
@@ -361,13 +335,12 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 56px;
-  margin-left: -36px;
 }
 
 .project p {
   width: 460px;
   margin-top: 26px;
-  line-height: 1.7;
+  line-height: 1.8;
   margin-left: -12px;
   word-spacing: 1.2px;
   letter-spacing: 0.5px;
@@ -381,6 +354,12 @@ h1 {
   list-style: none;
   margin-top: 48px;
   margin-left: -40px;
+  width: 1411px;
+  height: 320px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "SourceSanPro-Light", sans-serif;
+  font-size: 20px;
 }
 
 .project-footer {
@@ -417,9 +396,46 @@ h1 {
   text-decoration: none;
 }
 
+.project .layble {
+  background-image: url(../img/laybel.jpg);
+  background-size: cover;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding-top: 146px;
+}
+
+.project .vintage {
+  background-image: url(../img/sheet.jpg);
+  background-size: cover;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding-top: 146px;
+}
+
+.project .branding {
+  background-image: url(../img/book-color.jpg);
+  background-size: cover;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding-top: 146px;
+}
+
+.project ul li:hover {
+  transition: 0.5s;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
 .wr-service {
-  margin-top: 46px;
-  margin-left: -34px;
+  margin-top: 44px;
   background-color: #f3f3f3;
 }
 
@@ -438,12 +454,10 @@ h1 {
 }
 
 .service p {
-  width: 464px;
-  margin-top: 26px;
+  width: 484px;
+  margin-top: 24px;
   line-height: 1.7;
-  margin-left: -12px;
-  word-spacing: 1.2px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   color: #81868e;
 }
 
@@ -451,11 +465,11 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 48px;
+  margin-top: 50px;
 }
 
 .graphic ul {
-  font-size: 30px;
+  font-size: 28px;
   margin-left: 30px;
   margin-bottom: 120px;
 }
@@ -506,6 +520,7 @@ h1 {
   margin-left: 42px;
   width: 438px;
   font-size: 16px;
+  color: #81868e;
 }
 
 .wr-design h5 {
@@ -536,7 +551,7 @@ h1 {
 .wr-impressed figure {
   position: absolute;
   top: -36px;
-  right: 196px;
+  right: 372px;
 }
 
 .wr-impressed figcaption {
@@ -557,12 +572,11 @@ h1 {
 
 .impressed {
   margin-top: 62px;
-  margin-left: -16px;
 }
 
 .impressed p {
   margin-top: 48px;
-  width: 614px;
+  width: 612px;
   font-size: 16px;
   line-height: 1.7;
   word-spacing: 1.2px;
@@ -573,7 +587,7 @@ h1 {
   font-size: 14px;
   text-transform: uppercase;
   margin-top: 20px;
-  margin-bottom: 82px;
+  margin-bottom: 84px;
 }
 
 .impressed a {
@@ -584,5 +598,110 @@ h1 {
 .impressed span {
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+.wr-portfolio {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-top: 74px;
+  padding-bottom: 100px;
+}
+
+.potfolio p {
+  width: 480px;
+  margin: 0 auto;
+  padding-top: 26px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.potfolio ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 572px;
+  padding: 0;
+  margin-top: 76px;
+}
+
+.potfolio ul li a {
+  color: #2d2d2e;
+  text-decoration: none;
+}
+
+.potfolio ul li a:active {
+  border-bottom: solid 2px #19bd9a;
+  padding-bottom: 9px;
+}
+
+.collaj {
+  padding-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 270px 270px 270px 270px;
+  grid-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-auto-flow: column;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin-bottom: 40px;
+}
+
+.collaj .subitems-a {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.portfolio-footer {
+  width: 1110px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url(../img/about.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.portfolio-footer p {
+  letter-spacing: 0.7px;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.portfolio-footer span {
+  font-weight: bold;
+  letter-spacing: 1.6px;
+}
+
+.portfolio-footer a {
+  font-size: 16px;
+  color: #fff;
+  border: solid 1px;
+  padding: 6px 22px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.wr-team {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.wr-team p {
+  padding-top: 26px;
+  width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+  letter-spacing: 0.7px;
 }
 /*# sourceMappingURL=main.css.map */
