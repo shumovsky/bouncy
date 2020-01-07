@@ -923,7 +923,6 @@ h1 {
 }
 
 .news h4 {
-  font-family: "SourceSanPro-Light";
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1009,5 +1008,19 @@ h1 {
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
+}
+
+.wr-price {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.price p {
+  padding-top: 26px;
+  width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+  letter-spacing: 0.7px;
 }
 /*# sourceMappingURL=main.css.map */
