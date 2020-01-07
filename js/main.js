@@ -13,3 +13,11 @@ $('.slade-news').slick({
     dots: true,
     dotsClass: 'dotsnews-style'
   });
+  $(function () {
+    $('#carouselExampleFade').carousel({
+      keyboard: true,
+      pause: 'hover',
+      ride: 'carousel',
+      wrap: true,
+    });
+  });
