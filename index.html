@@ -32,22 +32,23 @@
                                 <a class="nav-link" href="#">Hello <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#services">Services<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#portfolio">Portfolio <span
+                                        class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Team <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#team">Team <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#blog">Blog <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#contact">Contact <span class="sr-only">(current)</span></a>
                             </li>
                         </ul>
                     </div>
@@ -87,7 +88,7 @@
     <section class="wr-details">
         <div class="container">
             <div class="details">
-                <h4> details about bouncy</h4>
+                <h4 id="about"> details about bouncy</h4>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
                 <ul>
                     <li><a href="#"><i class="far fa-heart"></i></a></li>
@@ -134,7 +135,7 @@
     <section class="wr-service">
         <div class="container">
             <div class="service">
-                <h4>Our Services</h4>
+                <h4 id="services">Our Services</h4>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
             </div>
             <div class="graphic">
@@ -194,7 +195,7 @@
     <section class="wr-portfolio">
         <div class="conrainer">
             <div class="potfolio">
-                <h4>the portfolio</h4>
+                <h4 id="portfolio">the portfolio</h4>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                 <ul>
                     <li><a href="#">All Works</a></li>
@@ -263,7 +264,7 @@
     <section class="wr-team">
         <div class="container">
             <div class="team">
-                <h4>THE TEAM</h4>
+                <h4 id="team">THE TEAM</h4>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
                     blanditiis praesentium</p>
             </div>
@@ -305,8 +306,8 @@
                             </p>
                             <div class="staff">
                                 <h6>BRANDING <span>80%</span></h6>
-                                <h6>Web Design <span>80%</span></h6>
-                                <h6>User Interface<span>80%</span></h6>
+                                <h6>Web Design <span>76%</span></h6>
+                                <h6>User Interface<span>85%</span></h6>
                             </div>
                         </div>
                     </div>
@@ -372,7 +373,7 @@
     <section class="wr-news">
         <div class="container">
             <div class="news">
-                <h4>LATEST NEWS</h4>
+                <h4 id="blog">LATEST NEWS</h4>
                 <p>
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentiumd
                 </p>
@@ -422,6 +423,7 @@
                     <li><button>base</button>
                         <p>&#36; 60</p>
                         <p>Per Month</p>
+                    </li>
                     <li><button>premium</button>
                         <p>&#36; 70</p>
                         <p>Per Month</p>
@@ -429,7 +431,6 @@
                     <li><button> exclusive</button>
                         <p>&#36; 80</p>
                         <p>Per Month</p>
-                    </li>
                     </li>
                 </ul>
             </div>
@@ -441,15 +442,52 @@
                 <h4>Subscribe us</h4>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
             </div>
+            <div>
+                <form action="">
+                    <input type="email" placeholder="Email Address" name="email" id="email">
+                    <input type="submit" value="submit" class="btn-submit">
+                </form>
+            </div>
         </div>
     </section>
     <section class="wr-contact">
         <div class="container">
             <div class="contact">
-                <h4></h4>
-                <p></p>
+                <h4 id="contact">contact us</h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
             </div>
-        </div>
+            <div class="contact-items">
+                <ul>
+                    <li>
+                        <form action="mailto:hello@codecafe.com, mailto:Personal@codecafe.com"><button
+                                class="btn-email"><i class="far fa-envelope"></i></button></form>
+                        <p>EMAIL</p>
+                        <a href="mailto:hello@codecafe.com">hello@codecafe.com</a>
+                        <a href="mailto:Personal@codecafe.com">Personal@codecafe.com</a>
+                    </li>
+                    <li><button class="btn-adress"><i class="fas fa-map-marker-alt"></i></button>
+                        <p>OUR OFFICE</p>
+                        <p>240 Bhatikhana, 8200 Barisal
+                            Bangladesh </p>
+                    </li>
+                    <li>
+                        <form action="tel:+00 11 66 99 66 44
+                        11 99 66 44 065"> <button class="btn-phone"><i class="fas fa-phone-alt"></i></button></form>
+                        <p>PHONE</p>
+                        <a href="tel:+00 11 66 99 66 44
+                        11 99 66 44 065">+00 11 66 99 66 44
+                            11 99 66 44 065</a>
+                    </li>
+            </div>
+            <div class="contact-footer">
+                <form action="">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Email address">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button></button>
+                </form>
+            </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
