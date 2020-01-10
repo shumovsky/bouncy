@@ -33,3 +33,4 @@ $('.slade-news').slick({
       })
     })
   }
+

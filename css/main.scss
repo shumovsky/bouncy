@@ -894,6 +894,18 @@ h1 {
   border: none;
   cursor: pointer;
 }
+.btn-secondary {
+  width: 100%;
+  height: 68px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #19bd9a;
+  border: none;
+  cursor: pointer;
+}
 .price-footer ul li p:nth-child(2) {
   font-family: "SourceSansPro-Black";
   font-size: 42px;
@@ -953,8 +965,8 @@ h1 {
   background-color: #f3f3f3;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 86px;
 }
+
 .contact p {
   padding-top: 26px;
   width: 480px;
@@ -1001,11 +1013,45 @@ h1 {
 }
 .contact-footer {
   background-color: #fff;
+  padding: 0;
+  margin: 100px 0 0 0 ;
+  padding-bottom: 126px;
 }
 .contact-footer form {
-  display: grid;
   width: 940px;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  padding-top:  82px;
+  text-align: justify;
 }
+#subject {
+  width: 100%;
+  margin-top: 28px;
+  resize: none;
+}
+.contact-footer button {
+  width: 100%;
+  background-color: #19bd9a;
+  border: none;
+  margin-top: 20px;
+  height: 54px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+}
+.contact-footer input {
+  height: 42px;
+  width: 289px;
+}
+.contact-footer ::placeholder{
+  padding-left: 16px;
+}
+.contact-footer button:hover {
+  background-color: #42e7c4;
+}
+.contact-footer input, textarea{
+  border: solid 1px #c2c2c2;
+}
+.contact-footer:focus, textarea:focus {
+border: solid 1px #42e7c4;;
+}
+
