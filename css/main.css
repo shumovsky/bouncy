@@ -1175,6 +1175,7 @@ h1 {
   background-color: #f3f3f3;
   text-align: center;
   padding-top: 60px;
+  padding-bottom: 86px;
 }
 
 .contact p {
@@ -1238,17 +1239,18 @@ h1 {
   background-image: url(../img/note.jpg);
 }
 
+.wr-subject {
+  padding-top: 66px;
+}
+
 .contact-footer {
   background-color: #fff;
   padding: 0;
-  margin: 100px 0 0 0;
-  padding-bottom: 126px;
 }
 
 .contact-footer form {
   width: 940px;
   margin: 0 auto;
-  padding-top: 82px;
   text-align: justify;
 }
 
@@ -1303,6 +1305,10 @@ textarea {
 .contact-footer:focus,
 textarea:focus {
   border: solid 1px #42e7c4;
+}
+
+.map {
+  padding-top: 120px;
 }
 
 footer {
