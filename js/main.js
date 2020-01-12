@@ -21,16 +21,33 @@ $('.slade-news').slick({
       wrap: true,
     });
   });
-  const anchors = document.querySelectorAll('a[href*="#"]')
 
-  for (let anchor of anchors) {
-    anchor.addEventListener("click", function(event) {
-      event.preventDefault();
-      const blockID = anchor.getAttribute('href')
-      document.querySelector ('' + blockID).scrollIntoView({ 
-        behavior: "smooth",
-        block: "start"
-      })
-    })
-  }
+  $('.navbar-nav .nav-link').click(function() {
+    const blockID = $(this).attr('href');
+    document.querySelector ('' + blockID).scrollIntoView({ 
+      behavior: "smooth",
+      block: "start"
+    });
 
+    return false;
+  });
+  
+  $('.details-icon li a').click(function() {
+    let id = $(this).attr('data-content-id');
+
+    $('.details-content .item').removeClass('active');
+
+    $('#'+id).addClass('active');
+
+    return false;
+  });
+
+$('.graphic-icon li a').click(function() {
+  let id = $(this).attr('data-content-id');
+
+  $('.disign-item .wr-design').removeClass('active');
+
+  $('#'+id).addClass('active');
+
+  return false;
+});

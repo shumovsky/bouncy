@@ -105,7 +105,7 @@ header img {
   background-image: url(../img/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 738px;
+  height: 100vh;
   color: #fff;
 }
 
@@ -160,7 +160,7 @@ h1 {
 
 .wr-about {
   position: relative;
-  margin-bottom: 44px;
+  padding-bottom: 44px;
 }
 
 .about {
@@ -425,24 +425,19 @@ h1 {
 
 .project .layble {
   background-image: url(../img/laybel.jpg);
-  background-size: cover;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  padding-top: 146px;
 }
 
 .project .vintage {
   background-image: url(../img/sheet.jpg);
-  background-size: cover;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  padding-top: 146px;
 }
 
 .project .branding {
   background-image: url(../img/book-color.jpg);
+}
+
+.project ul li {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: hue;
   background-size: cover;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
@@ -451,6 +446,8 @@ h1 {
 }
 
 .project ul li:hover {
+  font-size: 0px;
+  background-color: transparent;
   transition: 0.5s;
   -webkit-box-flex: 4;
       -ms-flex-positive: 4;
@@ -549,9 +546,15 @@ h1 {
 
 .wr-design {
   margin-left: 42px;
-  width: 438px;
+  width: 956px;
   font-size: 16px;
   color: #81868e;
+}
+
+.disign-item .wr-design.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wr-design h5 {
@@ -786,6 +789,13 @@ h1 {
   color: #81868e;
 }
 
+.wr-staff h6::before {
+  content: "";
+  width: 25px;
+  height: 1px;
+  background-color: #42e7c4;
+}
+
 .wr-staff p {
   padding-top: 22px;
   width: 390px;
@@ -815,13 +825,26 @@ h1 {
   float: right;
 }
 
+.staff h6 .line {
+  background: #000;
+  height: 4px;
+}
+
+.staff h6 .line::after {
+  display: block;
+  content: "";
+  width: 80%;
+  background: #19bd9a;
+  height: 4px;
+}
+
 .carousel-indicators {
   margin-bottom: 86px;
 }
 
 .carousel-indicators li {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   background-color: #fff;
   border: 1px solid #19bd9a;
   border-radius: 50%;
@@ -925,10 +948,14 @@ h1 {
 }
 
 .dots-style li button {
+  padding: 0px;
   font-size: 0px;
-  height: 16px;
-  border: solid 2px #19bd9a;
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border: solid 1px #19bd9a;
   border-radius: 50%;
+  outline-style: none;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -936,7 +963,7 @@ h1 {
 }
 
 .dots-style li {
-  width: 8px;
+  width: 0px;
   height: 8px;
   font-size: 0px;
   z-index: 5;
@@ -1019,16 +1046,18 @@ h1 {
 }
 
 .dotsnews-style li button {
-  width: 8px;
+  padding: 0;
+  width: 10px;
+  height: 10px;
   font-size: 0px;
-  height: 14px;
   border: solid 1px #fff;
   background-color: transparent;
   border-radius: 50%;
+  outline-style: none;
 }
 
 .dotsnews-style li[class="slick-active"] button {
-  background-color: #fff;
+  background-color: #636060;
 }
 
 .sl-news a:hover {
@@ -1066,46 +1095,86 @@ h1 {
           justify-content: space-between;
 }
 
+.description p {
+  font-size: 14px;
+}
+
 .price-footer ul li {
   width: 234px;
   height: 302px;
   background-color: #fff;
+  overflow: hidden;
+}
+
+.price-footer ul li .description {
+  display: block;
+  height: 302px;
+  background: #fff;
+}
+
+.price-footer ul li .main-price {
+  height: 302px;
+  display: block;
+  background: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.price-footer ul li:hover .description {
+  display: block;
+}
+
+.price-footer ul li:hover .main-price {
+  height: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .price-footer button {
   width: 100%;
   height: 68px;
   text-decoration: none;
+  background-color: #19bd9a;
+  border: none;
+}
+
+.main-price button {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
-  background-color: #19bd9a;
-  border: none;
-  cursor: pointer;
 }
 
-.btn-secondary {
-  width: 100%;
-  height: 68px;
+.description button a {
+  font-size: 16px;
+  color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #19bd9a;
-  border: none;
-  cursor: pointer;
 }
 
-.price-footer ul li p:nth-child(2) {
+.description button p {
+  letter-spacing: 0.7px;
+  line-height: 1.8;
+}
+
+.description p:nth-child(1) {
+  padding-top: 18px;
+}
+
+.main-price p:nth-child(2) {
   font-family: "SourceSansPro-Black";
   font-size: 42px;
   color: #19bd9a;
   padding-top: 52px;
 }
 
-.price-footer ul li p:nth-child(3) {
+.main-price p:nth-child(3) {
   font-size: 20px;
   margin-top: -20px;
   letter-spacing: 0.8px;
@@ -1374,5 +1443,50 @@ footer ul li:nth-child(5) {
 
 footer ul li a i {
   padding-top: 6px;
+}
+
+@media only screen and (max-width: 320px) and (max-width: 768px) {
+  section {
+    padding: 0;
+  }
+  .intro h1 {
+    font-size: 18px;
+  }
+  .intro p {
+    font-size: 14px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    background-color: #c2c2c2;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .ipad {
+    display: none;
+  }
+  .wr-about {
+    padding: 0;
+  }
+  .wr-about .container {
+    display: none;
+  }
+}
+
+.details-content .item {
+  display: none;
+}
+
+.details-content .item.active {
+  display: block;
+}
+
+.disign-item .wr-design {
+  display: none;
+}
+
+.disign-item .wr-design.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
