@@ -789,13 +789,6 @@ h1 {
   color: #81868e;
 }
 
-.wr-staff h6::before {
-  content: "";
-  width: 25px;
-  height: 1px;
-  background-color: #42e7c4;
-}
-
 .wr-staff p {
   padding-top: 22px;
   width: 390px;
@@ -1488,5 +1481,13 @@ footer ul li a i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.progress {
+  height: 4px;
+}
+
+.bg-success {
+  background: #19bd9a;
 }
 /*# sourceMappingURL=main.css.map */

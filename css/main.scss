@@ -644,12 +644,12 @@ h1 {
   letter-spacing: 1.4px;
   color: #81868e;
 }
-.wr-staff h6::before {
-  content: "";
-  width: 25px;
-  height: 1px;
-  background-color: #42e7c4;
-}
+// .wr-staff h6::before {
+//   content: "";
+//   width: 25px;
+//   height: 1px;
+//   background-color: #42e7c4;
+// }
 .wr-staff p {
   padding-top: 22px;
   width: 390px;
@@ -1218,4 +1218,10 @@ footer ul li a i {
 }
 .disign-item .wr-design.active {
   display: flex;
+}
+.progress {
+  height: 4px;
+}
+.bg-success {
+  background: #19bd9a;
 }
