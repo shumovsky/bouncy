@@ -666,9 +666,6 @@ h1 {
 .staff h6 {
   font-size: 16px;
   padding-top: 26px;
-  padding-bottom: 6px;
-  border-bottom: solid 4px transparent;
-  border-image: linear-gradient(to right, #19bd9a 0%, #19bd9a 80%, #e1e4e9 80%, #e1e4e9 100%) 1 1;
 }
 .staff span {
   float: right;
@@ -1232,4 +1229,5 @@ progress {
   height: 4px;
   position: absolute;
   bottom: 140px;
+  width: 100%;
 }

@@ -807,11 +807,6 @@ h1 {
 .staff h6 {
   font-size: 16px;
   padding-top: 26px;
-  padding-bottom: 6px;
-  border-bottom: solid 4px transparent;
-  -o-border-image: linear-gradient(to right, #19bd9a 0%, #19bd9a 80%, #e1e4e9 80%, #e1e4e9 100%) 1 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(#19bd9a), color-stop(80%, #19bd9a), color-stop(80%, #e1e4e9), to(#e1e4e9)) 1 1;
-     border-image: linear-gradient(to right, #19bd9a 0%, #19bd9a 80%, #e1e4e9 80%, #e1e4e9 100%) 1 1;
 }
 
 .staff span {
@@ -1499,5 +1494,6 @@ progress {
   height: 4px;
   position: absolute;
   bottom: 140px;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
