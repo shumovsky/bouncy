@@ -51,3 +51,23 @@ $('.graphic-icon li a').click(function() {
 
   return false;
 });
+
+function progressBar(time){
+  let start = 0;
+  let progressElement = document.getElementById('user-progress');
+  let intervalID=setInterval(function(){
+if(start>80) {
+  clearInterval(intervalID);
+  userProgressCallBack();
+}
+else {
+progressElement.value = start;
+}
+start++;
+}, time);
+}
+
+function userProgressCallBack(){
+  document.querySelector('.staff span').style.display = 'block';
+}
+progressBar(50);
