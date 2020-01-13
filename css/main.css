@@ -1494,4 +1494,8 @@ footer ul li a i {
 .staff span {
   display: none;
 }
+
+progress {
+  height: 4px;
+}
 /*# sourceMappingURL=main.css.map */
