@@ -316,8 +316,8 @@ h1 {
   display: inline-flex;
   list-style: none;
   margin-top: 48px;
-  margin-left: -40px;
-  width: 1411px;
+  padding: 0;
+  margin: 0 auto;
   height: 320px;
   color: #fff;
   text-transform: uppercase;
@@ -326,10 +326,15 @@ h1 {
 }
 .project-footer {
   background-image: url(../img/foot.jpg);
-  width: 1371px;
+  width: 100%;
   height: 114px;
-  margin-top: -10px;
   display: inline-flex;
+}
+.maket {
+  width: 100%;
+}
+.maket ul {
+  width: 100%;
 }
 .project-footer p {
   width: 100%;
@@ -703,7 +708,7 @@ h1 {
 }
 .team-footer {
   background-image: url(../img/contact.jpg);
-  width: 1364px;
+  width: 100%;
   margin: 0 auto;
   color: #fff;
   font-size: 20px;
