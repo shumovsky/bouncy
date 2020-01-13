@@ -1497,5 +1497,7 @@ footer ul li a i {
 
 progress {
   height: 4px;
+  position: absolute;
+  bottom: 140px;
 }
 /*# sourceMappingURL=main.css.map */
