@@ -56,7 +56,7 @@ function progressBar(time){
   let start = 0;
   let progressElement = document.getElementById('user-progress');
   let intervalID=setInterval(function(){
-if(start>80) {
+if(start>100) {
   clearInterval(intervalID);
   userProgressCallBack();
 }
