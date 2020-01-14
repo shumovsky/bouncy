@@ -1224,13 +1224,54 @@ footer ul li a i {
   }
   .creative {
     margin: 0 auto;
-    padding: 0;
     font-size: 12px;
   }
   .container h5 {
     padding-top: 16px;
   }
+  .container p {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project ul li {
+    flex-grow: 1;
+  }
+  .maket ul {
+    height: auto;
+  }
+  .project ul li {
+    margin: 2px;
+    writing-mode: tb;
+    font-size: 16px;
+  }
+  .project-footer a {
+    display: block;
+    margin: 0 auto;
+  }
+  .graphic {
+    display: block;
+    margin: 5px auto;
+  }
+  .graphic ul {
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+    display: flex;
+  }
+  .wr-design .design{
+    font-size: 12px;
+    margin: 5px auto;
+  }
+
+
+
 }
+
+
+
+
+
+
 
 .details-content .item {
   display: none;
