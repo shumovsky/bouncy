@@ -1185,7 +1185,7 @@ footer ul li a i {
   padding-top: 6px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 813px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   section {
     padding: 0;
   }
@@ -1304,47 +1304,55 @@ footer ul li a i {
     flex-direction: column;
     padding: 0;
   }
-  .sl-test img{
+  .sl-test img {
     padding: 0;
   }
-  .wr-news{
+  .wr-news {
     width: 100%;
   }
   .wr-impressed figure {
     display: none;
   }
-  .price-footer ul{
+  .price-footer ul {
     flex-direction: column;
   }
-  .wr-price{
+  .wr-price {
     padding: 0;
   }
-  #email{
+  #email {
     width: 100%;
   }
-  .btn-submit{
+  .btn-submit {
     margin-top: 12px;
     border-radius: 20px;
   }
-  .contact-items ul{
+  .contact-items ul {
     flex-direction: column;
   }
-  .contact-footer{
+  .contact-footer {
     display: flex;
   }
-  .contact-footer button{
+  .contact-footer button {
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-}
-.map{
-  display: flex;
-}
-iframe {
-  height: 100%;
-}
+  }
+  .map {
+    display: flex;
+  }
+  iframe {
+    height: 100%;
+  }
+  .price-footer ul {
+    align-items: center;
+    width: 100%;
+  }
+  .contact-items ul {
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .details-content .item {
