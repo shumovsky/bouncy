@@ -1445,7 +1445,7 @@ footer ul li a i {
   padding-top: 6px;
 }
 
-@media only screen and (max-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 813px) {
   section {
     padding: 0;
   }
@@ -1510,7 +1510,7 @@ footer ul li a i {
   }
   .project-footer a {
     display: block;
-    margin: 0 auto;
+    margin: 0 86px;
   }
   .graphic {
     display: block;
@@ -1524,10 +1524,108 @@ footer ul li a i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 20px;
   }
   .wr-design .design {
     font-size: 12px;
     margin: 5px auto;
+  }
+  .disign-item .wr-design.active {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .skills {
+    display: none;
+  }
+  .wr-portfolio {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .portfolio-footer {
+    width: 100%;
+  }
+  .portfolio-footer p {
+    font-size: 14px;
+  }
+  .carousel {
+    padding: 0;
+  }
+  .carousel-indicators {
+    margin-bottom: 12px;
+  }
+  .wr-staff {
+    text-align: left;
+    position: absolute;
+  }
+  .wr-staff p {
+    display: none;
+  }
+  .wr-staff h5 {
+    margin-top: 30%;
+    color: #19bd9a;
+  }
+  .sl-test {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .sl-test img {
+    padding: 0;
+  }
+  .wr-news {
+    width: 100%;
+  }
+  .wr-impressed figure {
+    display: none;
+  }
+  .price-footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wr-price {
+    padding: 0;
+  }
+  #email {
+    width: 100%;
+  }
+  .btn-submit {
+    margin-top: 12px;
+    border-radius: 20px;
+  }
+  .contact-items ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-footer button {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  iframe {
+    height: 100%;
   }
 }
 
