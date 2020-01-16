@@ -1185,7 +1185,7 @@ footer ul li a i {
   padding-top: 6px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   section {
     padding: 0;
   }
@@ -1353,7 +1353,70 @@ footer ul li a i {
     align-items: center;
     width: 100%;
   }
+  .slade-test.slick-dotted.slick-slider p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .slick-dotted.slick-slider {
+    padding: 0;
+  }
+  .slade-test.slick-dotted.slick-slider {
+    width: 100%;
+  }
+  .slade-test.slick-dotted.slick-slider p {
+    width: 100%;
+  }
+  .dots-style li button {
+    margin-top: 80px;
+  }
 }
+// @media only screen and (min-width:375px) and (max-width: 1200px){
+//   .about {
+//     left: 16px;
+//   }
+//   .ipad img{
+//     margin: 0 auto;
+//   }
+//   .creative {
+//     margin: 0 auto;
+//     padding: 0;
+//   }
+//   .skills ul{
+//     margin: 0 auto;
+//     padding: 0 34px;
+//   }
+//  figure{
+//     display: none;
+//   }
+//   .slade-test.slick-dotted.slick-slider{
+//     width: 100%;
+//   }
+//   .slade-test.slick-dotted.slick-slider p{
+// width: 100%;
+//   }
+//   .dots-style li button{
+//     margin-top: 50px;
+//   }
+//   .wr-news{
+//     width: 100%;
+//   }
+//   .price-footer{
+//       display: flex;
+//   }
+//   .contact-items{
+//     display: flex;
+//   }
+//   .contact-items ul{
+//     display: contents;
+//   }
+//   .contact-footer form{
+//     width: 100%;
+//   }
+//   .contact-footer input{
+//     width: 100%;
+//     margin: 8px 0px;
+//   }
+// }
 
 .details-content .item {
   display: none;

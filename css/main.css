@@ -1445,7 +1445,7 @@ footer ul li a i {
   padding-top: 6px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   section {
     padding: 0;
   }
@@ -1638,6 +1638,22 @@ footer ul li a i {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+  }
+  .slade-test.slick-dotted.slick-slider p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .slick-dotted.slick-slider {
+    padding: 0;
+  }
+  .slade-test.slick-dotted.slick-slider {
+    width: 100%;
+  }
+  .slade-test.slick-dotted.slick-slider p {
+    width: 100%;
+  }
+  .dots-style li button {
+    margin-top: 80px;
   }
 }
 
