@@ -556,6 +556,19 @@ h1 {
   transition: 0.3s;
 }
 
+.skills .box .chart {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  text-align: center;
+}
+
+.skills .box canvas {
+  position: absolute;
+  top: -35px;
+  left: 0;
+}
+
 .wr-design {
   margin-left: 42px;
   width: 956px;
@@ -699,25 +712,148 @@ h1 {
   padding-bottom: 9px;
 }
 
+.wr-collaj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1206px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
 .collaj {
   padding-top: 60px;
   display: -ms-grid;
   display: grid;
-  grid-auto-columns: 270px 270px 270px 270px;
-  grid-gap: 10px;
+  -ms-grid-columns: (270px)[4];
+      grid-template-columns: repeat(4, 270px);
+  gap: 10px;
+}
+
+.grid-item1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 13;
+  grid-row: 1 / 14;
+  position: relative;
+}
+
+.grid-item2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 8;
+  grid-row: 1 / 9;
+  position: relative;
+}
+
+.grid-item3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 11;
+  grid-row: 1 / 12;
+  position: relative;
+}
+
+.grid-item4 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 13;
+  grid-row: 1 / 14;
+  position: relative;
+}
+
+.grid-item5 {
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 13;
+  grid-row: 14 / 27;
+  position: relative;
+}
+
+.grid-item6 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 13;
+  grid-row: 9 / 22;
+  position: relative;
+}
+
+.grid-item7 {
+  -ms-grid-row: 12;
+  -ms-grid-row-span: 14;
+  grid-row: 12 / 26;
+  position: relative;
+}
+
+.grid-item8 {
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 10;
+  grid-row: 14 / 24;
+  position: relative;
+}
+
+.grid-item9 {
+  -ms-grid-row: 27;
+  -ms-grid-row-span: 8;
+  grid-row: 27 / 35;
+  position: relative;
+}
+
+.grid-item10 {
+  -ms-grid-row: 22;
+  -ms-grid-row-span: 13;
+  grid-row: 22 / 35;
+  position: relative;
+}
+
+.grid-item11 {
+  -ms-grid-row: 26;
+  -ms-grid-row-span: 9;
+  grid-row: 26 / 35;
+  position: relative;
+}
+
+.grid-item12 {
+  -ms-grid-row: 24;
+  -ms-grid-row-span: 11;
+  grid-row: 24 / 35;
+  position: relative;
+}
+
+.grid-item-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-auto-flow: column;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  margin-bottom: 40px;
+  padding: 0 40px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(1, 1, 1, 0.8);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.collaj .subitems-a {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
+.grid-item-hover:hover {
+  opacity: 1;
+}
+
+.grid-item-hover h4 {
+  color: #19bd9a;
+}
+
+.grid-item-hover p {
+  padding-top: 30px;
+  font-size: 12px;
+  color: #b2b3b3;
 }
 
 .portfolio-footer {
@@ -810,7 +946,7 @@ h1 {
 }
 
 .staff {
-  width: 330px;
+  width: 500px;
   text-align: left;
   margin-left: auto;
   padding-top: 6px;
@@ -825,17 +961,74 @@ h1 {
   float: right;
 }
 
-.staff h6 .line {
-  background: #000;
-  height: 4px;
+.skillBox {
+  width: 100%;
 }
 
-.staff h6 .line::after {
-  display: block;
-  content: "";
+.skillBox p {
+  float: right;
+  margin: -25px 0;
+  padding: 0;
+  text-align: right;
+  position: relative;
+}
+
+.skill {
+  background: #ddd;
+}
+
+.skill_line1 {
   width: 80%;
   background: #19bd9a;
   height: 4px;
+}
+
+.skill_line2 {
+  width: 84%;
+  background: #19bd9a;
+  height: 4px;
+}
+
+.skill_line3 {
+  width: 76%;
+  background: #19bd9a;
+  height: 4px;
+}
+
+.skill_line4 {
+  width: 80%;
+  height: 4px;
+  background-color: #19bd9a;
+}
+
+.skill_line5 {
+  height: 4px;
+  width: 87%;
+  background-color: #19bd9a;
+}
+
+.skill_line6 {
+  height: 4px;
+  width: 79%;
+  background-color: #19bd9a;
+}
+
+.skill_line7 {
+  height: 4px;
+  width: 75%;
+  background-color: #19bd9a;
+}
+
+.skill_line8 {
+  height: 4px;
+  width: 90%;
+  background-color: #19bd9a;
+}
+
+.skill_line9 {
+  height: 4px;
+  width: 83%;
+  background-color: #19bd9a;
 }
 
 .carousel-indicators {
@@ -1548,6 +1741,9 @@ footer ul li a i {
   .portfolio-footer p {
     font-size: 14px;
   }
+  .potfolio p {
+    width: 100%;
+  }
   .carousel {
     padding: 0;
   }
@@ -1654,6 +1850,133 @@ footer ul li a i {
   }
   .dots-style li button {
     margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  .ipad img {
+    display: none;
+  }
+  .about {
+    position: relative;
+    left: 16px;
+    top: 12px;
+  }
+  .wr-button {
+    bottom: 10px;
+  }
+  .wr-creative {
+    margin: 0 12px;
+  }
+  .creative {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .graphic ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .disign-item .wr-design.active {
+    font-size: 14px;
+    widows: auto;
+  }
+  .wr-impressed figure {
+    display: none;
+  }
+  .carousel.pointer-event {
+    padding: 0px;
+  }
+  .wr-staff {
+    text-align: left;
+    padding-left: 6px;
+  }
+  .staff {
+    padding: 0;
+    margin: 0;
+  }
+  .sl-test img {
+    padding: 0;
+  }
+  .carousel {
+    padding: 0;
+  }
+  .carousel-indicators {
+    margin: 0;
+  }
+  .price-footer ul {
+    width: 100%;
+  }
+  .contact-items ul {
+    width: 100%;
+  }
+  .contact-footer form {
+    width: 100%;
+    text-align: center;
+  }
+  .contact-footer input {
+    margin: 8px;
+  }
+  iframe {
+    width: 100%;
+  }
+  .slade-test.slick-dotted.slick-slider {
+    width: 100%;
+  }
+  .slade-test.slick-dotted.slick-slider p {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+  .about {
+    left: 16px;
+  }
+  .ipad img {
+    margin: 0 auto;
+  }
+  .creative {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .skills ul {
+    margin: 0 auto;
+    padding: 0 34px;
+  }
+  figure {
+    display: none;
+  }
+  .slade-test.slick-dotted.slick-slider {
+    width: 100%;
+  }
+  .slade-test.slick-dotted.slick-slider p {
+    width: 100%;
+  }
+  .dots-style li button {
+    margin-top: 50px;
+  }
+  .wr-news {
+    width: 100%;
+  }
+  .price-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-items ul {
+    display: contents;
+  }
+  .contact-footer form {
+    width: 100%;
+  }
+  .contact-footer input {
+    width: 100%;
+    margin: 8px 0px;
   }
 }
 
