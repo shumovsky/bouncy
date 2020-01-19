@@ -1569,6 +1569,10 @@ textarea:focus {
   border: solid 1px #42e7c4;
 }
 
+.contact-items a {
+  color: #19bd9a;
+}
+
 .map {
   padding-top: 120px;
 }
@@ -1641,6 +1645,9 @@ footer ul li a i {
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   section {
     padding: 0;
+  }
+  .contact-footer input {
+    margin: 5px 0;
   }
   .intro h1 {
     font-size: 18px;
@@ -1744,6 +1751,15 @@ footer ul li a i {
   .potfolio p {
     width: 100%;
   }
+  .collaj {
+    display: none;
+  }
+  .potfolio ul {
+    display: contents;
+  }
+  .staff {
+    display: none;
+  }
   .carousel {
     padding: 0;
   }
@@ -1796,6 +1812,9 @@ footer ul li a i {
   .btn-submit {
     margin-top: 12px;
     border-radius: 20px;
+  }
+  .carousel-fade .carousel-item > div {
+    margin: 0 auto;
   }
   .contact-items ul {
     -webkit-box-orient: vertical;
@@ -1967,6 +1986,7 @@ footer ul li a i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 10px;
   }
   .contact-items ul {
     display: contents;
@@ -1977,6 +1997,28 @@ footer ul li a i {
   .contact-footer input {
     width: 100%;
     margin: 8px 0px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .ipad img {
+    display: none;
+  }
+  .about {
+    display: contents;
+  }
+  .about h4 {
+    text-align: center;
+  }
+  .about a {
+    margin: 0 120px;
+  }
+  .wr-creative {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .service p {
+    width: 100%;
   }
 }
 
